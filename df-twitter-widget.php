@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: DF Twitter Widget
-Plugin URI: #
+Plugin URI: https://github.com/danfisher85/df-twitter-widget
 Description: A simple Twitter feed widget.
 Author: Dan Fisher
-Version: 1.0.0
+Version: 1.0.1
 Author URI: https://themeforest.net/user/dan_fisher
 Text Domain: df-twitter-widget
 Domain Path: /lang
@@ -187,8 +187,8 @@ class DF_Widget_Twitter_Feed extends WP_Widget {
             <div class="twitter-feed__timestamp"><a href="//twitter.com/' . $instance['twitter_id'] . '/statuses/' . $tweet['status_id'] . '" target="_blank">' . $this->df_relative_time( $tweet['created_at'] ) . '</a></div>
             <div class="twitter-feed__actions">
             <a href="//twitter.com/intent/tweet?in_reply_to=' . $tweet['status_id'] . '" onclick="window.open(\'//twitter.com/intent/tweet?in_reply_to=' . $tweet['status_id'] . '\', \'newwindow\', \'width=600, height=400\'); return false;" class="twitter-feed__reply"></a>
-            <a href="//twitter.com/intent/retweet?tweet_id=' . $tweet['status_id'] . '" onclick="window.open(\'//twitter.com/intent/retweet?tweet_id=' . $tweet['status_id'] . '\', \'newwindow\', \'width=600, height=400\'); return false;"class="twitter-feed__retweet"></a>
-            <a href="//twitter.com/intent/favorite?tweet_id=' . $tweet['status_id'] . '" onclick="window.open(\'//twitter.com/intent/favorite?tweet_id=' . $tweet['status_id'] . '\', \'newwindow\', \'width=600, height=400\'); return false;"class="twitter-feed__favorite"></a>
+            <a href="//twitter.com/intent/retweet?tweet_id=' . $tweet['status_id'] . '" onclick="window.open(\'//twitter.com/intent/retweet?tweet_id=' . $tweet['status_id'] . '\', \'newwindow\', \'width=600, height=400\'); return false;" class="twitter-feed__retweet"></a>
+            <a href="//twitter.com/intent/favorite?tweet_id=' . $tweet['status_id'] . '" onclick="window.open(\'//twitter.com/intent/favorite?tweet_id=' . $tweet['status_id'] . '\', \'newwindow\', \'width=600, height=400\'); return false;" class="twitter-feed__favorite"></a>
             </div>
             </footer>
             </li>';
